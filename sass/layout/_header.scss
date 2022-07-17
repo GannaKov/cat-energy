@@ -1,0 +1,33 @@
+.page-header {
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 17px;
+  & .container {
+    display: flex;
+  }
+}
+.menu_open_btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  color: rgba(0, 0, 0, 1);
+  //   background-color: transparent;
+}
+.menu_open_icon {
+  fill: rgba(0, 0, 0, 1);
+}
+.mobile-header__list {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-header__item {
+  margin-right: 57px;
+}
+.header-logo__link {
+}
+
+.header-logo__pic {
+}
+.header-logo__word {
+}
