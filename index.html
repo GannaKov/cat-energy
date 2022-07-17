@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Oswald&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link
@@ -31,45 +31,57 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <!--mobile header--> 
-       
-        <ul class="mobile-header__list list">
-          <li class="mobile-header__item">
+        <div class="header-menu">
+          <a href="" class="header-logo-link link">
+            <span class="logo-icon--tablet"></span>
+            <!-- <img 
+          src="./images/logo-tablet.svg" 
+          alt="Кот логотип"  > -->
+          </a>
+          <nav class="header-nav">
+            <ul class="header-nav__list list">
+              <li class="header-nav__item">
+                <button class="header-nav__btn" type="button">
+                  <a class="link link-current" href=""> главная </a>
+                </button>
+              </li>
+              <li class="header-nav__item">
+                <button class="header-nav__btn" type="button">
+                  <a class="link" href=""> каталог продукции </a>
+                </button>
+              </li>
+              <li class="header-nav__item">
+                <button class="header-nav__btn" type="button">
+                  <a class="link" href=""> подбор программы </a>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!--mobile header-->
+        <div class="mobile-header">
+          <ul class="mobile-header__list list">
+            <li class="mobile-header__item">
               <a href="" class="mobile-header__link link">
-              <svg class="mobile-header-logo__pic"
-              width="33"
-              height="37"
-              >
-            <use href="./images/icons.svg#icon-logo-1">
-
-            </use>
-          </svg>
-            </a>
-                
-          </li> 
-          <li class="mobile-header__item">
-            <a href="" class="mobile-header__link link">
-              <svg class="header-logo__word"
-              width="110"
-              height="18"
-              >
-            <use href="./images/icons.svg#icon-logo-2">
-
-            </use>
-          </svg>
-            </a>
-          </li>
-        </ul>
-         <button type="button" class="menu_open_btn">
-         <svg class="menu_open_icon"
-              width="24"
-              height="16"
-              >
-            <use href="./images/icons.svg#icon-open-menu_24px">
-
-            </use>
-          </svg> 
-        </button>
+                <svg class="mobile-header-logo__pic" width="33" height="37">
+                  <use href="./images/icons.svg#icon-logo-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-header__item">
+              <a href="" class="mobile-header__link link">
+                <svg class="header-logo__word" width="110" height="18">
+                  <use href="./images/icons.svg#icon-logo-2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="menu_open_btn">
+            <svg class="menu_open_icon" width="24" height="16">
+              <use href="./images/icons.svg#icon-open-menu_24px"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -77,29 +89,16 @@
       <!-- HERO -->
 
       <section class="hero section">
-        
-        <div class="container">
-         
-        </div>
+        <div class="container"></div>
       </section>
-
-     
+    </main>
     <!-- Footer-->
 
     <footer class="footer-page">
-      <div class="container footer-page__blocks">
-      
-      </div>
+      <div class="container footer-page__blocks"></div>
     </footer>
-    <!-- Modal -->
 
-    <div class="backdrop is-hidden" data-modal>
-      <!-- is-hidden -->
-      <div class="modal">
-       
-      </div>
-    </div>
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script> -->
   </body>
 </html>

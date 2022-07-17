@@ -52,15 +52,36 @@ img {
   }
 }
 
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+.section {
+  outline: 1px dashed green;
+}
+
+.link-current {
+  padding-bottom: 7px;
+  border-bottom: 2px solid #68b738;
+}
+
 .page-header {
   width: 100%;
+}
+
+.mobile-header {
+  display: flex;
   padding-top: 11px;
   padding-bottom: 17px;
 }
-.page-header .container {
-  display: flex;
-}
 
+@media screen and (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+}
 .menu_open_btn {
   display: block;
   margin-left: auto;
@@ -80,4 +101,62 @@ img {
 
 .mobile-header__item {
   margin-right: 57px;
+}
+
+/* tablet desktop hesder*/
+.header-menu {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 24px;
+}
+@media screen and (max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-nav__list {
+  display: flex;
+}
+
+.logo-icon--tablet {
+  display: inline-flex;
+  width: 174px;
+  height: 51px;
+  background-image: url("../images/logo-tablet.svg");
+}
+@media screen and (min-width: 1440px) {
+  .logo-icon--tablet {
+    width: 202px;
+    height: 59px;
+    background-image: url("../images/logo-desktop.svg");
+  }
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.header-nav__btn {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  white-space: nowrap;
+}
+.header-nav__btn .link {
+  color: var(--main-text-color);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1440px) {
+  .header-nav__btn .link {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }/*# sourceMappingURL=main.css.map */
