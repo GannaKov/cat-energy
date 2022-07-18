@@ -1,5 +1,8 @@
 .page-header {
-  // width: 100%;
+  @include desktop {
+    position: absolute;
+    width: 1440px;
+  }
 }
 .mobile-header {
   display: flex;
@@ -84,6 +87,7 @@
     @include desktop {
       font-size: 20px;
       line-height: 1.5;
+      color: #ffffff;
     }
   }
 }
