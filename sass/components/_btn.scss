@@ -1,0 +1,31 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: transparent;
+  border: transparent;
+  &--hero {
+    background-color: rgba(104, 183, 56, 1);
+    color: #ffffff;
+
+    @include mobile {
+      width: 280px;
+      height: 40px;
+
+      line-height: 1.29;
+      text-transform: uppercase;
+    }
+
+    @include tablet {
+      width: 244px;
+      height: 54px;
+
+      font-size: 20px;
+      line-height: 0;
+
+      text-transform: uppercase;
+
+      /* basic-white */
+    }
+  }
+}

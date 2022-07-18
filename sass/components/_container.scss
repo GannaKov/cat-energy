@@ -1,11 +1,11 @@
 .container {
   outline: 1px dashed tomato;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include mobile {
     max-width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   @include tablet {
