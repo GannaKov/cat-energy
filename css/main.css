@@ -217,7 +217,10 @@ body {
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero-background-mobile@2x.jpg");
+    background-image: url("../images/hero-can-mobile@2x.png"), url("../images/hero-background-mobile@2x.jpg");
+    background-size: auto auto;
+    background-position: 50% 167px, top;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {

@@ -18,7 +18,11 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url("../images/hero-background-mobile@2x.jpg");
+        background-image: url("../images/hero-can-mobile@2x.png"),
+          url("../images/hero-background-mobile@2x.jpg");
+        background-size: auto auto;
+        background-position: 50% 167px, top;
+        background-repeat: no-repeat;
       }
     }
   }
