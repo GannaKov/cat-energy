@@ -1,0 +1,59 @@
+.hero {
+  width: 320px;
+  height: 480px;
+  margin: 0 auto;
+  padding-top: 27px;
+  //   height: 100%;
+  background-color: white;
+  @media screen and (max-width: 768px) {
+    background-image: url("../images/hero-can-mobile.png"),
+      url("../images/hero-background-mobile.jpg");
+    background-size: auto auto;
+    background-position: 50% 167px, top;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url("../images/hero-background-mobile@2x.jpg");
+      }
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/hero-background-desktop.jpg);
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url("../images/hero-background-desktop@2x.jpg");
+      }
+    }
+  }
+}
+.hero__title {
+  margin: 0 auto 25px;
+  max-width: 249px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--sec-title-size);
+  line-height: 1;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 1);
+}
+.hero__text {
+  margin: 0 auto 302px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 1);
+}

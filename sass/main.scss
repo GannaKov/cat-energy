@@ -1,8 +1,10 @@
 @import "./base/reset";
 @import "./utils/mixins";
+@import "./utils/vars";
 @import "./components/container";
 
 @import "./components/body";
 @import "./components/section";
 @import "./components/current";
 @import "./layout/header";
+@import "./layout/hero";

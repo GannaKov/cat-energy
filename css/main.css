@@ -31,11 +31,24 @@ img {
   height: auto;
 }
 
+:root {
+  --main-text-color: rgba(0, 0, 0, 1);
+  --title-size: 60px;
+  --sec-title-size: 36px;
+  --text-size: 16px;
+  --catalog-size: 20px;
+}
+
 .container {
   outline: 1px dashed tomato;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -159,4 +172,57 @@ body {
     font-size: 20px;
     line-height: 1.5;
   }
+}
+
+.hero {
+  width: 320px;
+  height: 480px;
+  margin: 0 auto;
+  padding-top: 27px;
+  background-color: white;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url("../images/hero-can-mobile.png"), url("../images/hero-background-mobile.jpg");
+    background-size: auto auto;
+    background-position: 50% 167px, top;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-background-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-image: url(../images/hero-background-desktop.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-background-desktop@2x.jpg");
+  }
+}
+
+.hero__title {
+  margin: 0 auto 25px;
+  max-width: 249px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--sec-title-size);
+  line-height: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.hero__text {
+  margin: 0 auto 302px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */
