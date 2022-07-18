@@ -201,23 +201,28 @@ body {
 }
 
 .hero {
-  width: 320px;
-  height: 480px;
-  margin: 0 auto;
-  padding-top: 27px;
   background-color: white;
+  margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero {
+    width: 320px;
+    height: 480px;
+    padding-top: 27px;
     background-image: url("../images/hero-can-mobile.png"), url("../images/hero-background-mobile.jpg");
     background-size: auto auto;
     background-position: 50% 167px, top;
     background-repeat: no-repeat;
   }
 }
-@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero-background-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero {
+    padding: 62px 207px 0 87px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -233,14 +238,29 @@ body {
 }
 
 .hero__title {
-  margin: 0 auto 25px;
-  max-width: 249px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: var(--sec-title-size);
-  line-height: 1;
-  text-align: center;
   color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 767px) {
+  .hero__title {
+    margin: 0 auto 25px;
+    max-width: 249px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--sec-title-size);
+    line-height: 1;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero__title {
+    text-align: start;
+    margin-bottom: 62px;
+    max-width: 414px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    color: #000000;
+  }
 }
 
 .hero__text {
@@ -251,4 +271,14 @@ body {
   font-size: 14px;
   line-height: 1;
   color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero__text {
+    font-size: 20px;
+    line-height: 1;
+    /* identical to box height, or 100% */
+    color: rgb(0, 0, 0);
+    text-align: start;
+    text-transform: uppercase;
+  }
 }/*# sourceMappingURL=main.css.map */
