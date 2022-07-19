@@ -264,12 +264,30 @@ body {
     background-repeat: no-repeat;
   }
 }
-
-.hero-overlay {
-  height: 305px;
+@media screen and (min-width: 1440px) {
+  .hero {
+    margin: 0 auto;
+    width: 1440px;
+    height: 696px;
+    padding-top: 223px;
+    background-image: url("../images/hero-can-desktop.png"), url("../images/hero-background-desktop.jpg");
+    background-size: auto auto;
+    background-position: right 330px top 143px, top right;
+    background-repeat: no-repeat;
+  }
 }
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-can-desktop@2x.png"), url("../images/hero-background-desktop@2x.jpg");
+    background-size: auto auto;
+    background-position: right 330px top 143px, top right;
+    background-repeat: no-repeat;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero-overlay {
+    height: 305px;
     background-image: url("../images/hero-background-mobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -285,6 +303,11 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero-overlay {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
   .hero-overlay {
     display: none;
   }
@@ -329,6 +352,7 @@ body {
     display: none;
   }
 }
+
 .hero__title {
   color: rgb(255, 255, 255);
 }
@@ -359,6 +383,7 @@ body {
 @media screen and (min-width: 1440px) {
   .hero__title {
     max-width: 414px;
+    margin-left: 80px;
     margin-bottom: 40px;
     font-style: normal;
     font-weight: 400;
@@ -391,6 +416,7 @@ body {
 @media screen and (min-width: 1440px) {
   .hero__text {
     margin-bottom: 52px;
+    margin-left: 80px;
     text-align: start;
     font-style: normal;
     font-weight: 400;
@@ -404,6 +430,11 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .btn--hero {
     margin-left: 86px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .btn--hero {
+    margin-left: 80px;
   }
 }
 

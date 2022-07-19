@@ -32,11 +32,35 @@
       }
     }
   }
+  @media screen and (min-width: 1440px) {
+    margin: 0 auto;
+    width: 1440px;
+    height: 696px;
+    padding-top: 223px;
+    background-image: url("../images/hero-can-desktop.png"),
+      url("../images/hero-background-desktop.jpg");
+    background-size: auto auto;
+    background-position: right 330px top 143px, top right;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url("../images/hero-can-desktop@2x.png"),
+          url("../images/hero-background-desktop@2x.jpg");
+        background-size: auto auto;
+        background-position: right 330px top 143px, top right;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
 
 .hero-overlay {
-  height: 305px;
   @media screen and (max-width: 767px) {
+    height: 305px;
     background-image: url("../images/hero-background-mobile.jpg");
     background-position: center;
 
@@ -60,6 +84,29 @@
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: none;
   }
+  @media screen and (min-width: 1440px) {
+    display: none;
+    //     height: 696px;
+    //     width: 50%;
+    //     margin-left: auto;
+    //     background-image: url("../images/hero-background-desktop.jpg");
+    //     background-repeat: no-repeat;
+
+    //     background-position: right;
+
+    //     @media (min-device-pixel-ratio: 2),
+    //       (-webkit-min-device-pixel-ratio: 2),
+    //       (-o-min-device-pixel-ratio: 2/1),
+    //       (min-resolution: 192dpi),
+    //       (min-resolution: 2dppx) {
+    //       & {
+    //         background-image: url("../images/hero-background-desktop@2x.jpg");
+
+    //         background-repeat: no-repeat;
+    //         background-size: 50%;
+    //       }
+    //     }
+  }
 }
 .hero-top {
   @media screen and (max-width: 767px) {
@@ -71,6 +118,8 @@
     padding-top: 27px;
   }
   @media screen and (min-width: 768px) and (max-width: 1439px) {
+  }
+  @include desktop {
   }
 }
 
@@ -106,8 +155,24 @@
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: none;
   }
-  @media screen and (min-width: 1440px) {
-  }
+  //   @media screen and (min-width: 1440px) {
+  //     background-image: url("../images/hero-can-desktop.png");
+  //     background-position: center;
+  //     background-size: auto;
+  //     background-repeat: no-repeat;
+  //     @media (min-device-pixel-ratio: 2),
+  //       (-webkit-min-device-pixel-ratio: 2),
+  //       (-o-min-device-pixel-ratio: 2/1),
+  //       (min-resolution: 192dpi),
+  //       (min-resolution: 2dppx) {
+  //       & {
+  //         background-image: url("../images/hero-can-desktop@2x.png");
+  //         background-position: center;
+  //         background-size: auto;
+  //         background-repeat: no-repeat;
+  //       }
+  //     }
+  //   }
 }
 // @media screen and (max-width: 767px) {
 ////     padding-top: 27px;
@@ -214,6 +279,8 @@
   }
   @include desktop {
     max-width: 414px;
+
+    margin-left: 80px;
     margin-bottom: 40px;
     font-style: normal;
     font-weight: 400;
@@ -245,6 +312,7 @@
   }
   @include desktop {
     margin-bottom: 52px;
+    margin-left: 80px;
     text-align: start;
     font-style: normal;
     font-weight: 400;
@@ -259,5 +327,8 @@
 .btn--hero {
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-left: 86px;
+  }
+  @include desktop {
+    margin-left: 80px;
   }
 }
