@@ -356,6 +356,7 @@ body {
 .problems {
   padding-top: 22px;
   padding-bottom: 22px;
+  width: 100%;
 }
 
 .problems-list {
