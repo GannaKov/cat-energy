@@ -238,12 +238,32 @@ body {
   }
 }
 
-.hero {
-  position: relative;
-  margin: 0 auto;
-  min-height: 480px;
-  width: 100%;
-  background-color: white;
+@media screen and (max-width: 767px) {
+  .hero {
+    position: relative;
+    margin: 0 auto;
+    min-height: 480px;
+    width: 100%;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero {
+    padding-top: 62px;
+    height: 872px;
+    background-image: url("../images/hero-can-tablet.png");
+    background-size: auto;
+    background-position: 50% 263px;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1439px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-can-tablet@2x.png");
+    background-size: auto;
+    background-position: 50% 263px;
+    background-repeat: no-repeat;
+  }
 }
 
 .hero-overlay {
@@ -257,33 +277,43 @@ body {
     background-size: cover;
   }
 }
-
-.hero-top {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: 0;
-  padding-top: 27px;
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero-overlay {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .hero-top {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    padding-top: 27px;
+  }
+}
 .hero-bottom {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: 167px;
-  width: 100%;
-  height: 270px;
   outline: 1px solid red;
 }
 @media screen and (max-width: 767px) {
   .hero-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 167px;
+    width: 100%;
+    height: 270px;
     background-image: url("../images/hero-can-mobile.png");
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
   }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero-bottom {
+    display: none;
+  }
+}
 .hero__title {
   color: rgb(255, 255, 255);
 }
@@ -300,11 +330,13 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero__title {
-    text-align: start;
-    margin-bottom: 62px;
+    margin-bottom: 41px;
+    margin-left: 86px;
     max-width: 414px;
+    font-family: "Oswald";
+    font-style: normal;
     font-weight: 400;
-    font-size: var(--title-size);
+    font-size: 60px;
     line-height: 1;
     color: #000000;
   }
@@ -333,6 +365,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero__text {
     margin-bottom: 49px;
+    margin-left: 86px;
     text-align: start;
     font-size: 20px;
     line-height: 1;
@@ -350,6 +383,12 @@ body {
     line-height: 1;
     text-transform: uppercase;
     color: #000000;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .btn--hero {
+    margin-left: 86px;
   }
 }
 

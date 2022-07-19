@@ -1,10 +1,37 @@
 .hero {
-  position: relative;
-  margin: 0 auto;
-  min-height: 480px;
-  width: 100%;
-  background-color: white;
+  @media screen and (max-width: 767px) {
+    position: relative;
+    margin: 0 auto;
+    min-height: 480px;
+    width: 100%;
+    background-color: white;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    padding-top: 62px;
+
+    // width: 768px;
+    height: 872px;
+    // padding: 62px 207px 0 87px;
+
+    background-image: url("../images/hero-can-tablet.png");
+    background-size: auto;
+    background-position: 50% 263px;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url("../images/hero-can-tablet@2x.png");
+        background-size: auto;
+        background-position: 50% 263px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
+
 .hero-overlay {
   height: 305px;
   @media screen and (max-width: 767px) {
@@ -14,31 +41,44 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    display: none;
+  }
 }
 .hero-top {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: 0;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
 
-  padding-top: 27px;
+    padding-top: 27px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+  }
 }
 
 .hero-bottom {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: 167px;
-  width: 100%;
-  //   min-width: 280px;
-  height: 270px;
   outline: 1px solid red;
 
   @media screen and (max-width: 767px) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 167px;
+    width: 100%;
+    //   min-width: 280px;
+    height: 270px;
+
     background-image: url("../images/hero-can-mobile.png");
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
   }
 }
 // @media screen and (max-width: 767px) {
@@ -129,11 +169,18 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
-    text-align: start;
-    margin-bottom: 62px;
+    // text-align: start;
+    margin-bottom: 41px;
+    margin-left: 86px;
+    // max-width: 414px;
+    // font-weight: 400;
+    // font-size: var(--title-size);
+    // line-height: 1;
     max-width: 414px;
+    font-family: "Oswald";
+    font-style: normal;
     font-weight: 400;
-    font-size: var(--title-size);
+    font-size: 60px;
     line-height: 1;
     color: #000000;
   }
@@ -159,6 +206,7 @@
   color: rgba(255, 255, 255, 1);
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-bottom: 49px;
+    margin-left: 86px;
     text-align: start;
     font-size: 20px;
     line-height: 1;
@@ -178,5 +226,10 @@
     text-transform: uppercase;
 
     color: #000000;
+  }
+}
+.btn--hero {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-left: 86px;
   }
 }
