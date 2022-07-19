@@ -1,60 +1,114 @@
 .problems {
-  padding-top: 22px;
-  padding-bottom: 22px;
   width: 100%;
+
+  @include mobile {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  @include tablet {
+  }
 }
 
-.visually-hidden {
-}
 .problems-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   width: 100%;
+  @include mobile {
+    gap: 20px;
+  }
+  @include tablet {
+    gap: 30px;
+  }
 }
 
 .problems-list__item {
   background-color: rgba(242, 242, 242, 1);
-  padding: 30px 20px 22px 20px;
+
   position: relative;
+  @include mobile {
+    padding: 30px 20px 22px 20px;
+  }
+  @include tablet {
+    padding: 77px 279px 57px 52px;
+  }
 }
 .problems-list__sec-title {
-  margin-bottom: 29px;
   display: flex;
-  margin-left: 71px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.54;
-  text-transform: uppercase;
-  align-items: center;
 
-  color: var(--main-text-color);
-  &.cat-slim::before {
-    content: "";
-    position: absolute;
-    left: 20px;
-    width: 53px;
-    height: 53px;
-    display: inline-flex;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 29px;
 
-    background-image: url("../images/cat-slim-mob.svg"),
-      url("../images/ellipse-mob.svg");
-    background-repeat: no-repeat;
-    background-position: 9px, 2px;
+    margin-left: 71px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.54;
+    text-transform: uppercase;
+    align-items: center;
+
+    color: var(--main-text-color);
+    &.cat-slim::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      width: 53px;
+      height: 53px;
+      display: inline-flex;
+
+      background-image: url("../images/cat-slim-mob.svg"),
+        url("../images/ellipse-mob.svg");
+      background-repeat: no-repeat;
+      background-position: 9px, 2px;
+    }
+    &.cat-pro::before {
+      content: "";
+      position: absolute;
+      left: 13px;
+      width: 67px;
+      height: 67px;
+      display: inline-flex;
+
+      background-image: url("../images/cat-pro-mob.svg"),
+        url("../images/ellipse-mob.svg");
+      background-repeat: no-repeat;
+      background-position: 0px, 9px;
+    }
   }
-  &.cat-pro::before {
-    content: "";
-    position: absolute;
-    left: 13px;
-    width: 67px;
-    height: 67px;
-    display: inline-flex;
 
-    background-image: url("../images/cat-pro-mob.svg"),
-      url("../images/ellipse-mob.svg");
-    background-repeat: no-repeat;
-    background-position: 0px, 9px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+
+    &.cat-slim::after {
+      content: "";
+      position: absolute;
+      right: 62px;
+      width: 53px;
+      height: 53px;
+      display: inline-flex;
+
+      background-image: url("../images/cat-slim-mob.svg"),
+        url("../images/ellipse-mob.svg");
+      background-repeat: no-repeat;
+      background-position: 9px, 2px;
+    }
+    &.cat-pro::after {
+      content: "";
+      position: absolute;
+      right: 62px;
+      width: 67px;
+      height: 67px;
+      display: inline-flex;
+
+      background-image: url("../images/cat-pro-mob.svg"),
+        url("../images/ellipse-mob.svg");
+      background-repeat: no-repeat;
+      background-position: 0px, 9px;
+    }
   }
 }
 
@@ -62,15 +116,25 @@
 //   margin-right: 19px;
 // }
 .problems-list__text {
-  margin-bottom: 19px;
-  padding-bottom: 23px;
-  border-bottom: 1px solid #d9d9d9;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 19px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #d9d9d9;
 
-  font-family: "Arial";
+    font-family: "Arial";
 
-  line-height: 1.29;
+    line-height: 1.29;
 
-  color: rgba(68, 68, 68, 1);
+    color: rgba(68, 68, 68, 1);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-bottom: 52px;
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+  }
 }
 
 .problems-list__link {
@@ -79,9 +143,13 @@
   font-weight: 400;
   font-size: var(--text-size);
   line-height: 1;
-
-  text-align: center;
   text-transform: uppercase;
-
   color: var(--main-text-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+  }
 }
