@@ -80,6 +80,13 @@ body {
   }
 }
 
+.kuku {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 320px;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -124,6 +131,9 @@ body {
   }
 }
 
+.page-header {
+  width: 100%;
+}
 @media screen and (min-width: 1440px) {
   .page-header {
     position: absolute;
@@ -136,6 +146,7 @@ body {
   width: 100%;
   padding-top: 11px;
   padding-bottom: 17px;
+  outline: 1px dashed blueviolet;
 }
 
 @media screen and (min-width: 768px) {
@@ -160,7 +171,7 @@ body {
   align-items: center;
 }
 
-.mobile-header__item {
+.mobile-header__item:not(:last-child) {
   margin-right: 57px;
 }
 
