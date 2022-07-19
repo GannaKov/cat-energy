@@ -15,10 +15,12 @@
 .problems-list__item {
   background-color: rgba(242, 242, 242, 1);
   padding: 30px 20px 22px 20px;
+  position: relative;
 }
 .problems-list__sec-title {
   margin-bottom: 29px;
   display: flex;
+  margin-left: 71px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -27,20 +29,34 @@
   align-items: center;
 
   color: var(--main-text-color);
-  &::before {
+  &.cat-slim::before {
     content: "";
-
-    display: inline-flex;
-    margin-right: 19px;
+    position: absolute;
+    left: 20px;
     width: 53px;
     height: 53px;
+    display: inline-flex;
 
     background-image: url("../images/cat-slim-mob.svg"),
       url("../images/ellipse-mob.svg");
     background-repeat: no-repeat;
     background-position: 9px, 2px;
   }
+  &.cat-pro::before {
+    content: "";
+    position: absolute;
+    left: 13px;
+    width: 67px;
+    height: 67px;
+    display: inline-flex;
+
+    background-image: url("../images/cat-pro-mob.svg"),
+      url("../images/ellipse-mob.svg");
+    background-repeat: no-repeat;
+    background-position: 0px, 9px;
+  }
 }
+
 // .problems-list__icon {
 //   margin-right: 19px;
 // }
