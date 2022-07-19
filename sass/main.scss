@@ -1,6 +1,7 @@
 @import "./base/reset";
 @import "./utils/mixins";
 @import "./utils/vars";
+@import "./utils/hidden";
 @import "./components/body";
 @import "./components/container";
 @import "./components/btn";
@@ -9,3 +10,4 @@
 @import "./components/current";
 @import "./layout/header";
 @import "./layout/hero";
+@import "./layout/problems";

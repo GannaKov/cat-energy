@@ -39,6 +39,19 @@ img {
   --catalog-size: 20px;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 body {
   font-family: "Oswald", sans-serif;
   background-color: rgb(255, 255, 255);
@@ -104,6 +117,11 @@ body {
 .link-current {
   padding-bottom: 7px;
   border-bottom: 2px solid #68b738;
+}
+@media screen and (min-width: 1440px) {
+  .link-current {
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -267,7 +285,7 @@ body {
   .hero {
     background-image: url("../images/hero-can-desktop@2x.png"), url("../images/hero-background-desktop@2x.jpg");
     background-size: auto auto;
-    background-position: 50% 167px, top;
+    background-position: right 330px top 143px, top right;
     background-repeat: no-repeat;
   }
 }
@@ -339,4 +357,63 @@ body {
     text-transform: uppercase;
     color: #000000;
   }
+}
+
+.problems {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.problems-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.problems-list__item {
+  background-color: rgb(242, 242, 242);
+  padding: 30px 20px 22px 20px;
+}
+
+.problems-list__sec-title {
+  margin-bottom: 29px;
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.54;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--main-text-color);
+}
+.problems-list__sec-title::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 19px;
+  width: 53px;
+  height: 53px;
+  background-image: url("../images/cat-slim-mob.svg"), url("../images/ellipse-mob.svg");
+  background-repeat: no-repeat;
+  background-position: 9px, 2px;
+}
+
+.problems-list__text {
+  margin-bottom: 19px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  font-family: "Arial";
+  line-height: 1.29;
+  color: rgb(68, 68, 68);
+}
+
+.problems-list__link {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--text-size);
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-text-color);
 }/*# sourceMappingURL=main.css.map */
