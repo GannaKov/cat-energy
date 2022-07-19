@@ -63,7 +63,11 @@ body {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 320px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -235,68 +239,47 @@ body {
 }
 
 .hero {
-  background-color: white;
+  position: relative;
   margin: 0 auto;
+  min-height: 480px;
+  width: 100%;
+  background-color: white;
 }
-.hero .section {
-  padding-top: 27px;
+
+.hero-overlay {
+  height: 305px;
 }
 @media screen and (max-width: 767px) {
-  .hero {
-    width: 320px;
-    height: 480px;
-    padding-top: 27px;
-    background-image: url("../images/hero-can-mobile.png"), url("../images/hero-background-mobile.jpg");
-    background-size: auto auto;
-    background-position: 50% 167px, top;
+  .hero-overlay {
+    background-image: url("../images/hero-background-mobile.jpg");
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/hero-can-mobile@2x.png"), url("../images/hero-background-mobile@2x.jpg");
-    background-size: auto auto;
-    background-position: 50% 167px, top;
-    background-repeat: no-repeat;
-  }
+
+.hero-top {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 0;
+  padding-top: 27px;
 }
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .hero {
-    width: 768px;
-    height: 872px;
-    padding-top: 62px;
-    padding-left: 87px;
-    background-image: url("../images/hero-can-tablet.jpg");
+
+.hero-bottom {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 167px;
+  width: 100%;
+  height: 270px;
+  outline: 1px solid red;
+}
+@media screen and (max-width: 767px) {
+  .hero-bottom {
+    background-image: url("../images/hero-can-mobile.png");
+    background-position: center;
     background-size: auto;
-    background-position: 50% 283px;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1439px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1439px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/hero-can-tablet@2x.jpg");
-    background-size: auto;
-    background-position: 50% 283px;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .hero {
-    width: 1440px;
-    height: 696px;
-    padding-top: 223px;
-    padding-left: 80px;
-    background-image: url("../images/hero-can-desktop.png"), url("../images/hero-background-desktop.jpg");
-    background-size: auto auto;
-    background-position: right 330px top 143px, top right;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/hero-can-desktop@2x.png"), url("../images/hero-background-desktop@2x.jpg");
-    background-size: auto auto;
-    background-position: right 330px top 143px, top right;
     background-repeat: no-repeat;
   }
 }
