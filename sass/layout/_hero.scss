@@ -1,11 +1,12 @@
 .hero {
   @media screen and (max-width: 767px) {
     position: relative;
-    margin: 0 auto;
+    // margin: 0 auto;
     min-height: 480px;
     width: 100%;
     background-color: white;
   }
+
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     padding-top: 62px;
 
@@ -17,6 +18,7 @@
     background-size: auto;
     background-position: 50% 263px;
     background-repeat: no-repeat;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (-o-min-device-pixel-ratio: 2/1),
@@ -40,6 +42,20 @@
 
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url("../images/hero-background-mobile@2x.jpg");
+        background-position: center;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: none;
@@ -74,6 +90,18 @@
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url("../images/hero-can-mobile@2x.png");
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+      }
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: none;
