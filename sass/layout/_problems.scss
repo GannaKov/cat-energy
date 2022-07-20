@@ -82,32 +82,36 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 1;
+    text-transform: uppercase;
 
     &.cat-slim::after {
       content: "";
       position: absolute;
       right: 62px;
-      width: 53px;
-      height: 53px;
+      bottom: 80px;
+      width: 200px;
+      height: 211px;
       display: inline-flex;
 
-      background-image: url("../images/cat-slim-mob.svg"),
-        url("../images/ellipse-mob.svg");
+      background-image: url("../images/cat-slim-tabl.svg"),
+        url("../images/ellipse-tabl.svg");
       background-repeat: no-repeat;
-      background-position: 9px, 2px;
+      background-position: right 30px bottom 19px, 0;
     }
+
     &.cat-pro::after {
       content: "";
       position: absolute;
-      right: 62px;
-      width: 67px;
-      height: 67px;
+      right: 28px;
+      bottom: 81px;
+      width: 268px;
+      height: 200px;
       display: inline-flex;
 
-      background-image: url("../images/cat-pro-mob.svg"),
-        url("../images/ellipse-mob.svg");
+      background-image: url("../images/cat-pro-tabl.svg"),
+        url("../images/ellipse-tabl.svg");
       background-repeat: no-repeat;
-      background-position: 0px, 9px;
+      background-position: 0px, 34px;
     }
   }
 }
@@ -138,6 +142,7 @@
 }
 
 .problems-list__link {
+  position: relative;
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
@@ -151,5 +156,27 @@
     line-height: 1.5;
     text-transform: uppercase;
     color: var(--main-text-color);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+
+    margin-left: 15px;
+    bottom: 6px;
+    // left: 0;
+    // top: 1px;
+    width: 24px;
+    height: 12px;
+    display: inline-flex;
+
+    background-image: url("../images/icon_arrow.svg");
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin-left: 25px;
+      width: 32px;
+      height: 10px;
+      bottom: 11px;
+    }
   }
 }
