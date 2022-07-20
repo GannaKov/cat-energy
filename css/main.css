@@ -253,7 +253,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1439px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1439px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero-can-tablet@2x.png");
-    background-size: auto;
+    background-size: 709px;
     background-position: 50% 263px;
     background-repeat: no-repeat;
   }
@@ -265,7 +265,7 @@ body {
     height: 696px;
     padding-top: 223px;
     background-image: url("../images/hero-can-desktop.png"), url("../images/hero-background-desktop.jpg");
-    background-size: auto auto;
+    background-size: auto, auto;
     background-position: right 330px top 143px, top right;
     background-repeat: no-repeat;
   }
@@ -273,7 +273,7 @@ body {
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero-can-desktop@2x.png"), url("../images/hero-background-desktop@2x.jpg");
-    background-size: auto auto;
+    background-size: 552px, contain;
     background-position: right 330px top 143px, top right;
     background-repeat: no-repeat;
   }
@@ -325,7 +325,7 @@ body {
     left: 50%;
     transform: translate(-50%);
     top: 167px;
-    width: 100%;
+    min-width: 280px;
     height: 270px;
     background-image: url("../images/hero-can-mobile.png");
     background-position: center;
@@ -337,7 +337,7 @@ body {
   .hero-bottom {
     background-image: url("../images/hero-can-mobile@2x.png");
     background-position: center;
-    background-size: auto;
+    background-size: 280px;
     background-repeat: no-repeat;
   }
 }
