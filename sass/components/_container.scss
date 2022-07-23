@@ -15,7 +15,8 @@
     padding-right: 30px;
   }
   @include desktop {
-    max-width: 1440px;
+    // max-width: 1440px;
+    max-width: 1200px;
     padding-left: 110px;
     padding-right: 110px;
   }
