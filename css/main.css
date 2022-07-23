@@ -674,4 +674,9 @@ body {
 }
 .img-scale:hover, .img-scale:focus {
   transform: scale(1.5);
+}
+@media screen and (max-width: 767px) {
+  .img-scale:hover, .img-scale:focus {
+    transform: scale(2);
+  }
 }/*# sourceMappingURL=main.css.map */
