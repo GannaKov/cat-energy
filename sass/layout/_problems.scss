@@ -1,12 +1,13 @@
 .problems {
   width: 100%;
-
   @include mobile {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
 
   @include tablet {
+    margin-top: 0px;
+    margin-bottom: 45px;
   }
 }
 
@@ -20,8 +21,11 @@
   @include tablet {
     gap: 30px;
   }
+  @include desktop {
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
 }
-
 .problems-list__item {
   background-color: rgba(242, 242, 242, 1);
 
@@ -32,7 +36,12 @@
   @include tablet {
     padding: 77px 279px 57px 52px;
   }
+  @include desktop {
+    flex-basis: calc((100% - 80px) / 2);
+    padding: 41px 52px 59px;
+  }
 }
+
 .problems-list__sec-title {
   display: flex;
 
@@ -65,7 +74,7 @@
       content: "";
       position: absolute;
       left: 13px;
-      width: 67px;
+      width: 69px;
       height: 67px;
       display: inline-flex;
 
@@ -114,6 +123,43 @@
       background-position: 0px, 34px;
     }
   }
+  @include desktop {
+    margin-left: 162px;
+    margin-bottom: 73px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--sec-title-size);
+    line-height: 1;
+    text-transform: uppercase;
+    align-items: center;
+    color: var(--main-text-color);
+    &.cat-slim::before {
+      content: "";
+      position: absolute;
+      left: 52px;
+      width: 100px;
+      height: 106px;
+      display: inline-flex;
+
+      background-image: url("../images/cat-slim-desk.svg"),
+        url("../images/ellipse-desk.svg");
+      background-repeat: no-repeat;
+      background-position: left 15px bottom 9px, 0;
+    }
+    &.cat-pro::before {
+      content: "";
+      position: absolute;
+      left: 32px;
+      width: 138px;
+      height: 100px;
+      display: inline-flex;
+
+      background-image: url("../images/cat-pro-desk.svg"),
+        url("../images/ellipse-desk.svg");
+      background-repeat: no-repeat;
+      background-position: 0, 19px;
+    }
+  }
 }
 
 // .problems-list__icon {
@@ -135,48 +181,57 @@
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-bottom: 52px;
     font-family: "Arial";
-    font-size: 16px;
+    font-size: var(--text-size);
     line-height: 1.5;
-    color: #000000;
+    color: var(--main-text-color);
+  }
+  @include desktop {
+    margin-bottom: 27px;
+    font-family: "Arial";
+    font-size: var(--text-size);
+    line-height: 1.5;
+
+    color: var(--main-text-color);
   }
 }
 
 .problems-list__link {
-  position: relative;
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
+  display: flex;
+  align-items: center;
+  //position: relative;
+  text-transform: uppercase;
   font-size: var(--text-size);
   line-height: 1;
-  text-transform: uppercase;
   color: var(--main-text-color);
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
-    font-size: 20px;
+    font-size: var(--catalog-size);
     line-height: 1.5;
-    text-transform: uppercase;
-    color: var(--main-text-color);
   }
+
   &::after {
     content: "";
-    position: absolute;
+    //position: absolute;
 
     margin-left: 15px;
-    bottom: 6px;
+    //bottom: 6px;
     // left: 0;
     // top: 1px;
     width: 24px;
     height: 12px;
-    display: inline-flex;
+    //display: inline-flex;
 
     background-image: url("../images/icon_arrow.svg");
     background-repeat: no-repeat;
 
     @media screen and (min-width: 768px) and (max-width: 1439px) {
       margin-left: 25px;
-      width: 32px;
-      height: 10px;
-      bottom: 11px;
+
+      //bottom: 11px;
+    }
+    @include desktop {
+      margin-left: 28px;
+      //bottom: 8px;
     }
   }
 }
