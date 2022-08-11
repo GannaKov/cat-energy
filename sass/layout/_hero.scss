@@ -1,5 +1,6 @@
 .hero {
   @media screen and (max-width: 767px) {
+    margin-bottom: 22px;
     position: relative;
     // margin: 0 auto;
     min-height: 480px;
@@ -14,7 +15,7 @@
     height: 872px;
     // padding: 62px 207px 0 87px;
 
-    background-image: url("../images/hero-can-tablet.png");
+    background-image: url('../images/hero-can-tablet.png');
     background-size: auto;
     background-position: 50% 263px;
     background-repeat: no-repeat;
@@ -25,7 +26,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url("../images/hero-can-tablet@2x.png");
+        background-image: url('../images/hero-can-tablet@2x.png');
         background-size: 709px;
         background-position: 50% 263px;
         background-repeat: no-repeat;
@@ -33,12 +34,12 @@
     }
   }
   @media screen and (min-width: 1440px) {
-    margin: 0 auto;
+    margin: 0 auto 69px;
     width: 1440px;
     height: 696px;
     padding-top: 223px;
-    background-image: url("../images/hero-can-desktop.png"),
-      url("../images/hero-background-desktop.jpg");
+    background-image: url('../images/hero-can-desktop.png'),
+      url('../images/hero-background-desktop.jpg');
     background-size: auto, auto;
     background-position: right 330px top 143px, top right;
     background-repeat: no-repeat;
@@ -48,8 +49,8 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url("../images/hero-can-desktop@2x.png"),
-          url("../images/hero-background-desktop@2x.jpg");
+        background-image: url('../images/hero-can-desktop@2x.png'),
+          url('../images/hero-background-desktop@2x.jpg');
         background-size: 552px, contain;
         background-position: right 330px top 143px, top right;
         background-repeat: no-repeat;
@@ -61,7 +62,7 @@
 .hero-overlay {
   @media screen and (max-width: 767px) {
     height: 305px;
-    background-image: url("../images/hero-background-mobile.jpg");
+    background-image: url('../images/hero-background-mobile.jpg');
     background-position: center;
 
     background-repeat: no-repeat;
@@ -73,7 +74,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url("../images/hero-background-mobile@2x.jpg");
+        background-image: url('../images/hero-background-mobile@2x.jpg');
         background-position: center;
 
         background-repeat: no-repeat;
@@ -135,7 +136,7 @@
     // min-width: 280px;
     height: 270px;
 
-    background-image: url("../images/hero-can-mobile.png");
+    background-image: url('../images/hero-can-mobile.png');
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -145,7 +146,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url("../images/hero-can-mobile@2x.png");
+        background-image: url('../images/hero-can-mobile@2x.png');
         background-position: center;
         background-size: 280px;
         background-repeat: no-repeat;
@@ -270,7 +271,7 @@
     // font-size: var(--title-size);
     // line-height: 1;
     max-width: 414px;
-    font-family: "Oswald";
+    font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
     font-size: 60px;

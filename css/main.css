@@ -126,15 +126,10 @@ body {
 
 .page-header {
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 @media screen and (min-width: 1440px) {
   .page-header {
     position: absolute;
-    width: 100%;
-    padding-right: 110px;
-    padding-left: 110px;
   }
 }
 
@@ -212,13 +207,11 @@ body {
   margin-right: 35px;
 }
 
-.header-nav__btn {
+.header-nav__item {
   display: flex;
-  background-color: transparent;
-  border: none;
   white-space: nowrap;
 }
-.header-nav__btn .link {
+.header-nav__item .link {
   color: var(--main-text-color);
   font-style: normal;
   font-size: 18px;
@@ -226,7 +219,7 @@ body {
   text-transform: uppercase;
 }
 @media screen and (min-width: 1440px) {
-  .header-nav__btn .link {
+  .header-nav__item .link {
     font-size: 20px;
     line-height: 1.5;
     color: #ffffff;
@@ -235,6 +228,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .hero {
+    margin-bottom: 22px;
     position: relative;
     min-height: 480px;
     width: 100%;
@@ -262,7 +256,7 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .hero {
-    margin: 0 auto;
+    margin: 0 auto 69px;
     width: 1440px;
     height: 696px;
     padding-top: 223px;
@@ -439,14 +433,18 @@ body {
 }
 @media screen and (min-width: 320px) {
   .problems {
-    margin-top: 22px;
-    margin-bottom: 22px;
+    margin-bottom: 27px;
   }
 }
 @media screen and (min-width: 768px) {
   .problems {
     margin-top: 0px;
     margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .problems {
+    margin-bottom: 71px;
   }
 }
 
@@ -661,4 +659,53 @@ body {
   .problems-list__link::after {
     margin-left: 28px;
   }
+}
+
+.it-works {
+  margin-bottom: 42px;
+}
+@media screen and (min-width: 768px) {
+  .it-works {
+    margin-bottom: 47px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .it-works {
+    margin-bottom: 69px;
+  }
+}
+
+.it-works__title {
+  margin-bottom: 38px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.11;
+  /* identical to box height, or 111% */
+  color: #000000;
+}
+
+.it-works__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.it-works__item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.it-works__text {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #444444;
+}
+
+.it-works__img {
+  width: 60px;
 }/*# sourceMappingURL=main.css.map */

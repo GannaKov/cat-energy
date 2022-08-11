@@ -1,0 +1,41 @@
+.it-works {
+  margin-bottom: 42px;
+  @include tablet {
+    margin-bottom: 47px;
+  }
+  @include desktop {
+    margin-bottom: 69px;
+  }
+}
+.it-works__title {
+  margin-bottom: 38px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.11;
+  /* identical to box height, or 111% */
+
+  color: #000000;
+}
+.it-works__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.it-works__item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.it-works__text {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: #444444;
+}
+.it-works__img {
+  width: 60px;
+}

@@ -1,16 +1,18 @@
 .problems {
   width: 100%;
   @include mobile {
-    margin-top: 22px;
-    margin-bottom: 22px;
+    // margin-top: 22px;
+    margin-bottom: 27px;
   }
 
   @include tablet {
     margin-top: 0px;
     margin-bottom: 45px;
   }
+  @include tablet {
+    margin-bottom: 71px;
+  }
 }
-
 .problems-list {
   display: flex;
   flex-wrap: wrap;
@@ -58,28 +60,26 @@
 
     color: var(--main-text-color);
     &.cat-slim::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 20px;
       width: 53px;
       height: 53px;
       display: inline-flex;
 
-      background-image: url("../images/cat-slim-mob.svg"),
-        url("../images/ellipse-mob.svg");
+      background-image: url('../images/cat-slim-mob.svg'), url('../images/ellipse-mob.svg');
       background-repeat: no-repeat;
       background-position: 9px, 2px;
     }
     &.cat-pro::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 13px;
       width: 69px;
       height: 67px;
       display: inline-flex;
 
-      background-image: url("../images/cat-pro-mob.svg"),
-        url("../images/ellipse-mob.svg");
+      background-image: url('../images/cat-pro-mob.svg'), url('../images/ellipse-mob.svg');
       background-repeat: no-repeat;
       background-position: 0px, 9px;
     }
@@ -94,7 +94,7 @@
     text-transform: uppercase;
 
     &.cat-slim::after {
-      content: "";
+      content: '';
       position: absolute;
       right: 62px;
       bottom: 80px;
@@ -102,14 +102,13 @@
       height: 211px;
       display: inline-flex;
 
-      background-image: url("../images/cat-slim-tabl.svg"),
-        url("../images/ellipse-tabl.svg");
+      background-image: url('../images/cat-slim-tabl.svg'), url('../images/ellipse-tabl.svg');
       background-repeat: no-repeat;
       background-position: right 30px bottom 19px, 0;
     }
 
     &.cat-pro::after {
-      content: "";
+      content: '';
       position: absolute;
       right: 28px;
       bottom: 81px;
@@ -117,8 +116,7 @@
       height: 200px;
       display: inline-flex;
 
-      background-image: url("../images/cat-pro-tabl.svg"),
-        url("../images/ellipse-tabl.svg");
+      background-image: url('../images/cat-pro-tabl.svg'), url('../images/ellipse-tabl.svg');
       background-repeat: no-repeat;
       background-position: 0px, 34px;
     }
@@ -134,28 +132,26 @@
     align-items: center;
     color: var(--main-text-color);
     &.cat-slim::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 52px;
       width: 100px;
       height: 106px;
       display: inline-flex;
 
-      background-image: url("../images/cat-slim-desk.svg"),
-        url("../images/ellipse-desk.svg");
+      background-image: url('../images/cat-slim-desk.svg'), url('../images/ellipse-desk.svg');
       background-repeat: no-repeat;
       background-position: left 15px bottom 9px, 0;
     }
     &.cat-pro::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 32px;
       width: 138px;
       height: 100px;
       display: inline-flex;
 
-      background-image: url("../images/cat-pro-desk.svg"),
-        url("../images/ellipse-desk.svg");
+      background-image: url('../images/cat-pro-desk.svg'), url('../images/ellipse-desk.svg');
       background-repeat: no-repeat;
       background-position: 0, 19px;
     }
@@ -171,7 +167,7 @@
     padding-bottom: 23px;
     border-bottom: 1px solid #d9d9d9;
 
-    font-family: "Arial";
+    font-family: 'Arial';
 
     line-height: 1.29;
 
@@ -180,14 +176,14 @@
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-bottom: 52px;
-    font-family: "Arial";
+    font-family: 'Arial';
     font-size: var(--text-size);
     line-height: 1.5;
     color: var(--main-text-color);
   }
   @include desktop {
     margin-bottom: 27px;
-    font-family: "Arial";
+    font-family: 'Arial';
     font-size: var(--text-size);
     line-height: 1.5;
 
@@ -210,7 +206,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     //position: absolute;
 
     margin-left: 15px;
@@ -221,7 +217,7 @@
     height: 12px;
     //display: inline-flex;
 
-    background-image: url("../images/icon_arrow.svg");
+    background-image: url('../images/icon_arrow.svg');
     background-repeat: no-repeat;
 
     @media screen and (min-width: 768px) and (max-width: 1439px) {
