@@ -1,6 +1,8 @@
 .it-works {
   margin-bottom: 42px;
   @include tablet {
+    position: relative;
+
     margin-bottom: 104px;
     .container {
       padding-right: 105px;
@@ -82,10 +84,19 @@
     right: 0;
     z-index: -1;
     width: 134px;
-    height: 280px;
+    height: 259px;
     &.back-img--1 {
       right: 35px;
       width: 112px;
     }
+  }
+}
+.it-works__bottom-line {
+  @include tabl-desktop {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(230, 230, 230, 1);
+    padding-left: 0;
+    padding-right: 0;
   }
 }

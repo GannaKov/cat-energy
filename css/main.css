@@ -666,6 +666,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .it-works {
+    position: relative;
     margin-bottom: 104px;
   }
   .it-works .container {
@@ -757,10 +758,24 @@ body {
     right: 0;
     z-index: -1;
     width: 134px;
-    height: 280px;
+    height: 259px;
   }
   .it-works__back-img.back-img--1 {
     right: 35px;
     width: 112px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .it-works__bottom-line {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.examples .container {
+  padding-top: 27px;
 }/*# sourceMappingURL=main.css.map */
