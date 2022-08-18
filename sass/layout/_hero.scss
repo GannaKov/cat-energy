@@ -1,6 +1,5 @@
 .hero {
   @media screen and (max-width: 767px) {
-    margin-bottom: 22px;
     position: relative;
     // margin: 0 auto;
     min-height: 480px;
@@ -34,7 +33,8 @@
     }
   }
   @media screen and (min-width: 1440px) {
-    margin: 0 auto 69px;
+    margin: 0 auto;
+
     width: 1440px;
     height: 696px;
     padding-top: 223px;

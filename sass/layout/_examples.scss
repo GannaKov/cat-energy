@@ -1,5 +1,42 @@
 .examples {
   .container {
+    padding-bottom: 31px;
     padding-top: 27px;
+    @include mobil-tabl {
+      background-color: rgba(234, 234, 234, 1);
+    }
   }
+}
+.examples__sec-title {
+  margin-bottom: 33px;
+}
+.examples__text {
+  margin-bottom: 25px;
+}
+
+.examples__list {
+  display: flex;
+  margin-bottom: 34px;
+}
+
+.examples__item {
+}
+.examples__icon-text {
+}
+.examples__sec-text {
+}
+.examples__price-text {
+  margin-bottom: 42px;
+}
+
+.examples__back-img {
+  margin-bottom: 27px;
+}
+.example__slider {
+  display: flex;
+}
+.examples__slider-text {
+}
+.example__slider-img {
+  width: 84px;
 }

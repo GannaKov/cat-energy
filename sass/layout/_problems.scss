@@ -1,16 +1,17 @@
 .problems {
   width: 100%;
   @include mobile {
-    // margin-top: 22px;
-    margin-bottom: 27px;
+    padding-top: 22px;
+    padding-bottom: 27px;
   }
 
   @include tablet {
     margin-top: 0px;
-    margin-bottom: 45px;
+    padding-bottom: 45px;
   }
-  @include tablet {
-    margin-bottom: 71px;
+  @include desktop {
+    padding-top: 69px;
+    padding-bottom: 71px;
   }
 }
 .problems-list {

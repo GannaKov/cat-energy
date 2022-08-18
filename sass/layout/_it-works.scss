@@ -1,9 +1,9 @@
 .it-works {
-  margin-bottom: 42px;
+  padding-bottom: 42px;
   @include tablet {
     position: relative;
 
-    margin-bottom: 104px;
+    padding-bottom: 104px;
   }
   @include tabl-desktop {
     .container {
@@ -11,7 +11,7 @@
     }
   }
   @include desktop {
-    margin-bottom: 69px;
+    padding-bottom: 69px;
   }
 }
 .it-works__title {
