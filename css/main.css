@@ -819,15 +819,55 @@ body {
 
 .examples__sec-title {
   margin-bottom: 33px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--sec-title-size);
+  line-height: 1.11;
 }
 
 .examples__text {
   margin-bottom: 25px;
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 1.29;
+  color: rgb(68, 68, 68);
 }
 
 .examples__list {
   display: flex;
   margin-bottom: 34px;
+  gap: 35px;
+}
+
+.examples__item {
+  position: relative;
+  padding-top: 14.5px;
+  padding-bottom: 17.5px;
+  border: 1px solid rgb(205, 205, 205);
+  flex-basis: calc(100% - 17.5px);
+  align-items: center;
+}
+
+.examples__icon-text {
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+}
+
+.examples__sec-text {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgb(234, 234, 234);
+  width: 87px;
+  padding: 0px 14px 0px 14px;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  /* special_dark-grey */
+  color: #444444;
 }
 
 .examples__price-text {
