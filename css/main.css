@@ -927,8 +927,10 @@ body {
 @media screen and (max-width: 767px) {
   .examples__back-img {
     min-height: 232px;
+    width: 100%;
     margin-bottom: 27px;
     background-image: url("../images/ex-before-mobile.png");
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: 50%;
   }
@@ -937,6 +939,7 @@ body {
   .examples__back-img {
     min-height: 620px;
     background-image: url("../images/cat_tablet.png");
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: 50%;
   }
@@ -965,6 +968,7 @@ body {
     margin-right: 12px;
     width: 84px;
     background-image: url("../images/slider-mob.svg");
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: 50%;
   }
