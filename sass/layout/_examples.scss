@@ -1,106 +1,189 @@
 .examples {
   .container {
-    padding-bottom: 31px;
-    padding-top: 27px;
     @include mobil-tabl {
+      padding-bottom: 31px;
+      padding-top: 27px;
+
       background-color: rgba(234, 234, 234, 1);
+    }
+    @include tablet {
+      padding-top: 43px;
+      padding-bottom: 68px;
     }
   }
 }
 .examples__sec-title {
-  margin-bottom: 33px;
+  @include mobile {
+    margin-bottom: 33px;
 
-  font-style: normal;
-  font-weight: 400;
-  font-size: var(--sec-title-size);
-  line-height: 1.11;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--sec-title-size);
+    line-height: 1.11;
+  }
+  @include tablet {
+    margin-bottom: 63px;
+
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 .examples__text {
-  margin-bottom: 25px;
-  font-family: 'Arial';
-  font-size: 14px;
-  line-height: 1.29;
+  @include mobile {
+    margin-bottom: 25px;
+    font-family: 'Arial';
+    font-size: 14px;
+    line-height: 1.29;
 
-  color: rgba(68, 68, 68, 1);
+    color: rgba(68, 68, 68, 1);
+  }
+  @include tablet {
+    margin-bottom: 54px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
-
+.example__block {
+  @include tabl-desktop {
+    display: flex;
+  }
+}
 .examples__list {
-  display: flex;
-  margin-bottom: 34px;
-  // align-items: center;
-  gap: 35px;
+  @include mobile {
+    display: flex;
+    margin-bottom: 34px;
+    // align-items: center;
+    gap: 35px;
+  }
+  @include tablet {
+    margin-right: 167px;
+    margin-bottom: 64px;
+  }
 }
 
 .examples__item {
-  position: relative;
-  padding-top: 14.5px;
-  padding-bottom: 17.5px;
-  border: 1px solid rgba(205, 205, 205, 1);
-  flex-basis: calc((100% - 35px / 2));
-  align-items: center;
+  @include mobile {
+    position: relative;
+    padding-top: 14.5px;
+    padding-bottom: 17.5px;
+    border: 1px solid rgba(205, 205, 205, 1);
+    flex-basis: calc((100% - 35px / 2));
+    align-items: center;
+  }
+  @include tablet {
+  }
+}
+.examples__item:not(:last-child) {
+  margin-right: 41px;
 }
 // .examples__item:not(:last-child) {
 //   margin-right: 35px;
 // }
 .examples__icon-text {
-  font-size: 24px;
-  line-height: 1;
+  @include mobile {
+    font-size: 24px;
+    line-height: 1;
 
-  text-align: center;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+
+    text-align: center;
+  }
+  @include tablet {
+  }
 }
 .examples__sec-text {
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translate(-50%);
-  background-color: rgba(234, 234, 234, 1);
+  @include mobile {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(234, 234, 234, 1);
 
-  padding: 0px 14px 0px 14px;
+    padding: 0px 14px 0px 14px;
 
-  font-family: 'Arial';
+    font-family: 'Arial';
 
-  font-size: 12px;
-  line-height: 1;
+    font-size: 12px;
+    line-height: 1;
 
-  // align-items: center;
-  text-align: center;
+    // align-items: center;
+    text-align: center;
 
-  /* special_dark-grey */
+    /* special_dark-grey */
 
-  color: #444444;
+    color: #444444;
+  }
+  @include tablet {
+  }
 }
 .examples__price-text {
-  margin-bottom: 42px;
+  @include mobile {
+    margin-bottom: 42px;
 
-  font-size: 14px;
-  line-height: 1.43;
+    font-size: 14px;
+    line-height: 1.43;
 
-  text-align: center;
-  text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  @include tablet {
+  }
 }
 
 .examples__back-img {
-  margin-bottom: 27px;
+  @include mobil-tabl {
+    min-height: 232px;
+
+    margin-bottom: 27px;
+    background-image: url('../images/ex-before-mobile.png');
+    // background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  @include tablet {
+    min-height: 620px;
+    background-image: url('../images/cat_tablet.png');
+    // background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 }
 .example__slider {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .examples__slider-text {
-  margin-right: 12px;
+  @include mobile {
+    margin-right: 12px;
 
-  font-size: 16px;
-  line-height: 1.25;
+    font-size: 16px;
+    line-height: 1.25;
 
-  display: flex;
-  // align-items: center;
-  // text-align: center;
-  text-transform: uppercase;
+    display: flex;
+    // align-items: center;
+    // text-align: center;
+    text-transform: uppercase;
 
-  color: #000000;
+    color: #000000;
+  }
+  @include tablet {
+  }
 }
 .example__slider-img {
-  margin-right: 12px;
-  width: 84px;
+  @include mobil-tabl {
+    min-height: 14px;
+    min-width: 84px;
+    margin-right: 12px;
+    width: 84px;
+    background-image: url('../images/slider-mob.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  @include tablet {
+  }
 }
