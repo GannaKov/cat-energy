@@ -2,7 +2,9 @@
   @include tabl-desktop {
     background-image: linear-gradient(rgba(255, 255, 255, 1) 54%, rgba(234, 234, 234, 1) 54%);
   }
-
+  @include desktop {
+    background-image: linear-gradient(rgba(255, 255, 255, 1) 15%, rgba(234, 234, 234, 1) 15%);
+  }
   .container {
     @include mobil-tabl {
       padding-bottom: 31px;
@@ -32,6 +34,15 @@
     font-size: 60px;
     line-height: 1;
   }
+  @include desktop {
+    margin-bottom: 146px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    color: #000000;
+  }
 }
 .examples__text {
   @include mobile {
@@ -48,12 +59,27 @@
     font-size: 16px;
     line-height: 1.5;
   }
+  @include desktop {
+    margin-bottom: 69px;
+    width: 436px;
+    font-family: 'Arial';
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #444444;
+  }
 }
 .example__block {
   @include tabl-desktop {
     display: flex;
   }
+  @include desktop {
+    padding-right: 70px;
+    width: 436px;
+  }
 }
+
 .examples__list {
   @include mobile {
     display: flex;
@@ -61,12 +87,16 @@
     // align-items: center;
     gap: 32px;
   }
-  @include tablet {
+  @include tabl-desktop {
     // margin-right: 167px;
     margin-right: auto;
     margin-bottom: 64px;
     width: 50%;
     gap: 42px;
+  }
+  @include desktop {
+    gap: 42px;
+    margin-bottom: 60px;
   }
 }
 
@@ -107,6 +137,8 @@
     line-height: 1.23;
     color: #000000;
   }
+  @include desktop {
+  }
 }
 .examples__sec-text {
   @include mobile {
@@ -133,7 +165,16 @@
     background-color: rgba(255, 255, 255, 1);
     font-size: 14px;
   }
+  @include desktop {
+    background-color: rgba(234, 234, 234, 1);
+  }
 }
+.examples__price--tabl {
+  @include desktop {
+    display: flex;
+  }
+}
+
 .examples__price-text {
   @include mobile {
     margin-bottom: 42px;
@@ -162,6 +203,16 @@
       margin-bottom: 9px;
     }
   }
+  @include desktop {
+    white-space: nowrap;
+    margin-right: 63px;
+    font-size: 20px;
+    line-height: 1;
+
+    text-transform: uppercase;
+
+    color: #000000;
+  }
 }
 
 .examples__back-img {
@@ -181,7 +232,12 @@
     background-repeat: no-repeat;
     background-position: 50%;
   }
-  @include tabl-desktop {
+  @include desktop {
+    min-height: 656px;
+    background-image: url('../images/cat_desktop.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    // background-position: right 70px top 0px;
   }
 }
 .example__slider {
