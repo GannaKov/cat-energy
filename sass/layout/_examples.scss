@@ -160,6 +160,9 @@
   @include mobil-tabl {
     display: none;
   }
+  @include tabl-desktop {
+    margin-top: 15px;
+  }
 
   @include desktop {
     display: flex;
@@ -182,7 +185,6 @@
 }
 .examples__price-text--tabl {
   @include tabl-desktop {
-    margin-top: 15px;
     text-align: right;
     font-size: 20px;
     line-height: 1;
@@ -193,13 +195,17 @@
   }
   @include desktop {
     white-space: nowrap;
-    margin-right: 63px;
+
     font-size: 20px;
     line-height: 1;
 
     text-transform: uppercase;
 
     color: #000000;
+
+    &:not(:last-child) {
+      margin-right: 63px;
+    }
   }
 }
 
