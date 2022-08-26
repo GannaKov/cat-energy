@@ -3,7 +3,7 @@
     background-image: linear-gradient(rgba(255, 255, 255, 1) 54%, rgba(234, 234, 234, 1) 54%);
   }
   @include desktop {
-    background-image: linear-gradient(rgba(255, 255, 255, 1) 15%, rgba(234, 234, 234, 1) 15%);
+    background-image: linear-gradient(rgba(255, 255, 255, 1) 31%, rgba(234, 234, 234, 1) 31%);
   }
   .container {
     @include mobil-tabl {
@@ -16,6 +16,10 @@
       padding-top: 43px;
       padding-bottom: 33px;
       position: relative;
+    }
+    @include desktop {
+      padding-top: 69px;
+      padding-bottom: 75px;
     }
   }
 }
@@ -39,9 +43,6 @@
 
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
-    line-height: 1;
-    color: #000000;
   }
 }
 .examples__text {
@@ -62,11 +63,6 @@
   @include desktop {
     margin-bottom: 69px;
     width: 436px;
-    font-family: 'Arial';
-
-    font-size: 16px;
-    line-height: 1.5;
-
     color: #444444;
   }
 }
@@ -125,19 +121,12 @@
   @include mobile {
     font-size: 24px;
     line-height: 1;
-
-    text-align: center;
-    font-size: 24px;
-    line-height: 1;
-
     text-align: center;
   }
   @include tablet {
     font-size: 30px;
     line-height: 1.23;
     color: #000000;
-  }
-  @include desktop {
   }
 }
 .examples__sec-text {
@@ -151,10 +140,8 @@
     padding: 0px 14px 0px 14px;
 
     font-family: 'Arial';
-
     font-size: 12px;
     line-height: 1;
-
     text-align: center;
     color: rgba(68, 68, 68, 1);
   }
@@ -170,6 +157,10 @@
   }
 }
 .examples__price--tabl {
+  @include mobil-tabl {
+    display: none;
+  }
+
   @include desktop {
     display: flex;
   }
@@ -190,9 +181,6 @@
   }
 }
 .examples__price-text--tabl {
-  @include mobil-tabl {
-    display: none;
-  }
   @include tabl-desktop {
     margin-top: 15px;
     text-align: right;
@@ -218,7 +206,7 @@
 .examples__back-img {
   @include mobil-tabl {
     min-height: 232px;
-    width: 100%;
+    width: 100%; //для айфона 100%
     margin-bottom: 27px;
     background-image: url('../images/ex-before-mobile.png');
     background-size: auto;
@@ -227,28 +215,38 @@
   }
   @include tablet {
     min-height: 620px;
+
     background-image: url('../images/cat_tablet.png');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 50%;
   }
   @include desktop {
+    width: 696px;
     min-height: 656px;
     background-image: url('../images/cat_desktop.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-    // background-position: right 70px top 0px;
+  }
+}
+
+.examples__block--right-desktop {
+  @include desktop {
+    position: absolute;
+    right: 70px;
+    top: 0px;
   }
 }
 .example__slider {
   display: flex;
   align-items: center;
   justify-content: center;
-  @include tabl-desktop {
+  @include tablet {
     position: absolute;
     bottom: 67px;
     left: 50%;
     transform: translate(-50%);
+  }
+  @include tablet {
+    bottom: 53px;
   }
 }
 
@@ -293,5 +291,8 @@
     min-width: 428px;
     background-image: url('../images/slider-tabl.svg');
     background-repeat: no-repeat;
+  }
+  @include desktop {
+    min-width: 385px;
   }
 }
